@@ -50,4 +50,3 @@ ghi xàm vậy đủ rồi, chạy deadline tiếp thoi
 
 I love deadline in HCMUSSSSSSSSS <3 (khong phai tui noi)
 
-<img src="/img/logohcmus.png" alt="HCMUS" width="200"/>
