@@ -4,15 +4,15 @@
 platforms:
   - type: Twitter
     icon: "fa-brands fa-square-x-twitter"
-    link: "https://twitter.com/intent/tweet?text=TITLE&url=URL"
+    link: ""
 
   - type: Facebook
     icon: "fab fa-facebook-square"
-    link: "https://www.facebook.com/sharer/sharer.php?title=TITLE&u=URL"
+    link: "https://www.facebook.com/cuoq.nc"
 
-  - type: Telegram
-    icon: "fab fa-telegram"
-    link: "https://t.me/share/url?url=URL&text=TITLE"
+  - type: Instagram
+    icon: "fa-brands fa-square-instagram"
+    link: "https://www.instagram.com/_cuogne"
 
   # Uncomment below if you need to.
   #
