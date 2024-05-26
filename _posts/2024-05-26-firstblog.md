@@ -16,8 +16,6 @@ Hy vọng không ai đọc được mấy cái post này ;-;
 
 # INTRO đồ =)))
 
-![Arisu Dance](/img/blue-archive-alisu.gif)
-
 ```console
 #include <bits/stdc++.h>
 using namespace std ;
@@ -39,12 +37,6 @@ cout <<"Thank you for taking the time to read this bullshit article" << endl ;
 return 0;
 }
 ```
-
-- UID Genshin Impact : [812437754](https://enka.network/u/812437754/)
-![Genshin Impact](/img/genshin.jpeg)
-
-- Ingame Liên Quân Mobile : cừn.
-![Liên Quân Mobile](/img/lienquan.jpeg)
 
 ghi xàm vậy đủ rồi, chạy deadline tiếp thoi
 
