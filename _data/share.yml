@@ -4,7 +4,7 @@
 platforms:
   - type: Twitter
     icon: "fa-brands fa-square-x-twitter"
-    link: ""
+    link: "#"
 
   - type: Facebook
     icon: "fab fa-facebook-square"

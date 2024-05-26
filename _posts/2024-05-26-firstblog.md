@@ -16,7 +16,7 @@ Hy vọng không ai đọc được mấy cái post này ;-;
 
 # INTRO đồ =)))
 
-![Arisu Dance](/img/blue-archive-alisu.gif)
+![Arisu Dance](/img/blue-archive-arisu.gif)
 
 ```console
 #include <bits/stdc++.h>
@@ -57,13 +57,13 @@ return 0;
 - Spotify: [Cừn](https://open.spotify.com/playlist/00NUGyjyWXOXmFaSaDvNRX?si=1f16c625fd014ef6)
 
 - UID Genshin Impact : [812437754](https://enka.network/u/812437754/)
-![Genshin Impact](/img/genshin.jpeg)
+![Genshin Impact](/img/genshin_impact.jpeg)
 
 - Ingame Liên Quân Mobile : cừn.
-![Liên Quân Mobile](/img/lienquan.jpeg)
+![Liên Quân Mobile](/img/lq.jpeg)
 
 ghi xàm vậy đủ rồi, chạy deadline tiếp thoi
 
 I love deadline in HCMUSSSSSSSSS <3 (khong phai tui noi)
 
-<img src="/img/logohcmus.png" alt="HCMUS" width="200"/>
+<img src="/img/logous.png" alt="HCMUS" width="200"/>
