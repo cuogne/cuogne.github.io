@@ -39,22 +39,6 @@ cout <<"Thank you for taking the time to read this bullshit article" << endl ;
 return 0;
 }
 ```
-# Tìm tui ở đâu =))
-- Facebook: [Cường Dương](https://www.facebook.com/cuoq.nc/)
-
-- Instagram: [cừn](https://www.instagram.com/_cuogne/)
-
-- Locket: [_cừn](https://locket.camera/links/WZTL5Pb85EWVSeHJ8)
-
-- Github: [cuogne](https://github.com/cuogne)
-
-- Discord: [cừn](https://discord.gg/haycRy5eqW)
-
-- Reddit: [cuogne](https://www.reddit.com/user/cuogne/)
-
-- Linkedin: [Cường Dương](https://www.linkedin.com/in/cuogne/)
-
-- Spotify: [Cừn](https://open.spotify.com/playlist/00NUGyjyWXOXmFaSaDvNRX?si=1f16c625fd014ef6)
 
 - UID Genshin Impact : [812437754](https://enka.network/u/812437754/)
 ![Genshin Impact](/img/genshin.jpeg)
