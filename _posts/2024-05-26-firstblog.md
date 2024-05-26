@@ -52,8 +52,6 @@ return 0;
 
 - Reddit: [cuogne](https://www.reddit.com/user/cuogne/)
 
-- Linkedin: [Cường Dương](https://www.linkedin.com/in/cuogne/)
-
 - Spotify: [Cừn](https://open.spotify.com/playlist/00NUGyjyWXOXmFaSaDvNRX?si=1f16c625fd014ef6)
 
 - UID Genshin Impact : [812437754](https://enka.network/u/812437754/)
