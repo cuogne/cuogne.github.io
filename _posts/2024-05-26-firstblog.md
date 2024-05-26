@@ -8,5 +8,5 @@ categories: [Blog]
 ---
 
 # Welcome to my first blog post!
-Chắc đây là nơi tui viết xàm thoi :>
+đây là nơi tui viết xàm thoi :>
 
