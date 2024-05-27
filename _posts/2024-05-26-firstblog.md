@@ -1,9 +1,9 @@
 ---
 layout: post
 description: >-
-  About me and First Blog Post in here 
+  About me and First Blog Post in here
 title: My First Blog Post :>
-date: 2024-05-27 01:13:22 +0700
+date: 2024-05-26 13:55:22 +0700
 author: Cừn
 categories: [Blog, Intro]
 
@@ -24,14 +24,14 @@ using namespace std ;
 int main () {
 /*
 
-Tên : Cường <"Có thể gọi mình là Cừn nha"> 
+Tên : Cường <"Có thể gọi mình là Cừn nha">
 Date : 11/06/2005
 Sinh viên : Trường ĐH Khoa học Tự nhiên - Đại học Quốc gia Thành phố Hồ Chí Minh
 Ngành : Công Nghệ Thông Tin
 
-Notes: 
+Notes:
 - Đây là nơi để tui sẽ post mấy cái xàm xàm, hoặc là những dòng tâm sự hay suy nghĩ gì đó
-- Tui sẽ biến nó thành nơi lưu giữ khoảnh khắc của tui yeye 
+- Tui sẽ biến nó thành nơi lưu giữ khoảnh khắc của tui yeye
 
 */
 
