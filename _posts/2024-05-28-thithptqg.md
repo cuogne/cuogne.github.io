@@ -2,7 +2,7 @@
 layout: post
 description: >-
   chuyện thi thptqg của tui vào 1 năm trước :>
-title: Thi THPTQG của tuii
+title: Thi THPTQG của tui ra sao ?
 date: 2024-05-28 01:08:50 +0700
 author: Cừn
 categories: [Blog, Tâm sự]
@@ -18,7 +18,7 @@ Giờ thì cũng ôn thi, nhma là lấy gốc để thi qua môn kết thúc h�
 
 Ôi vo co lo nhanh vãi, mới còn lớp 12, còn thi thptqg mới xong đó mà giờ sắp hết năm 1 rồi =)) Thời gian trôi nhanh vãi, không chờ đợi ai cả...
 
-## Hành trình
+## Quá trình
 Tui bước vào lớp 12 với sự chuẩn bị đầy đủ từ khối thi, trường cũng như ngành =)))
 
 Tui chọn `tổ hợp A00 (Toán, Lý, Hóa)`{: .filepath}, `ngành là IT (Công nghệ Thông Tin) =)))`{: .filepath}, trường thì đặt sẳn `2 trường là Khoa học Tự nhiên (HCMUS) và Công nghệ Thông Tin (UIT) =)))`{: .filepath} ôi mă 2 trường có tiếng trong làng đại học cũng như trong thành phố và điểm đầu vào cũng khủng bố nữa =)))
@@ -36,7 +36,7 @@ Và với cái điểm đầu vào khủng bố như zay, tui ôn thi ra sao ?
 
 Thật ra trường tui không được sử dụng UTXT của khối ĐHQG, nên gần như muốn vào chỉ còn là thi ĐGNL với thi THPTQG thoi. Mà cơ bản thì tui học đã ngu mấy môn xã hội rồi nên chốt đơn học lệch luôn - chỉ học 3 môn Toán Lý Hóa (3 môn tổ hợp của tui), còn lại thì kệ mấy môn kia luôn =))) học vậy thì điểm tb môn cuối kì nát bét. Hậu quả là kì 1 năm 12 tui bị không chế môn Sinh =)))) chỉ có 5.5đ trung bình môn Sinh thoi =))))))
 
-Tui học thì cũng bình thường như bạn bè thui, học từ từ, tới khoảng cuối tháng 3 toi mới luyện đề ;-; trong lớp hay ngoài lớp còn có mấy bạn nó học hết chương trình lớp 12 từ kì 1 nữa, rồi xuất phát sớm học với mấy ông thầy trên mạng các kiểu, thi thử toàn đứng top, điểm thì 9+ bla bla, xong cuối cùng tui vẫn thi cao điểm hơn tụi nó 🐧🐧🐧🐧🐧🐧🐧 (Khong biet gi het, an hen, bu win thoi).
+Tui học thì cũng bình thường như bạn bè thui, học từ từ, tới khoảng cuối tháng 3 toi mới luyện đề ;-; trong lớp hay ngoài lớp còn có mấy bạn nó học hết chương trình lớp 12 từ kì 1 nữa, rồi xuất phát sớm học với mấy ông thầy trên mạng các kiểu, thi thử toàn đứng top, điểm thì 9+ bla bla, xong cuối cùng tui vẫn thi cao điểm hơn tụi nó 🐧🐧🐧🐧🐧🐧🐧 (Khong biet gi het, an hen, bu win thoi, dung noi tui hoc gioi ma, hoc ngoo lam).
 
 Ôn thi bao chill luôn, vừa ôn vừa chơi game rồi cày rank chạy map nữa chứ =))))
 ![toi on thi cuc chill](/img/thptqg2023/onthi.jpeg){: w="700" h="300" }
@@ -57,7 +57,7 @@ Lúc này là hoàn thành mục tiêu, so chill =)))) thi thptqg chỉ còn là
 
 Nhưng mà mình nhận ra là, ôn thi nguyên năm mà cuối cùng lại không thi hết sức ư
 
-Thế là thi chill chill mà như thi thật (mà một phần cũng nhờ đỗ UIT sớm nên tâm lý cũng thoải mái hehe)
+Thế là thi chill chill mà thi vẫn hết sức, đi thi mặt cũng căng thẳng áp lực đồ cho giống với bạn bè (làm màu belike) =))) (thật ra là đỗ UIT sớm nên tâm lý cũng thoải mái hehe)
 
 Một bí kíp nhỏ của tui khi thi thật được mấy anh chị truyền lại (cái này chắc có nhiều bạn biết rồi)
 
@@ -69,11 +69,11 @@ _Tờ giấy báo dự thi của Cừn sau khi thi 3 môn Lý Hóa Sinh_
 
 - Lúc bắt đầu tính giờ làm bài môn Sinh, tui làm đúng 10p =)))) (Thật ra có mấy câu nó dễ như kiểu chống liệt á, làm xong biết không rớt tốt nghiệp rồi nên lụi lẹ). Xong là lấy giấy bút giấy nháp + đề thi sinh lúc đó rồi vặn hết công sức thoi.
 
-- Cuối cùng, sau khi kết thúc thì tui giải dc 1 câu Lý + 2 câu Hóa =)))))))
+- Cuối cùng, sau khi kết thúc thì tui giải thêm dc 1 câu Lý + 2 câu Hóa =))))))) (lúc ra check đáp án thì mấy câu tui giải trong lúc đó đều đúng hết, + 0,75đ hehehe) nhưng mà lại sai ngu vài câu lý thuyết xàm ;-; với lụi Lý với Hóa kh dính nữa chứ
 
-Phần còn lại của buổi chiều hôm đó là môn Tiếng Anh và... tiếng trống báo hiệu hết giờ làm bài, cũng như tui đã hoàn thành kì thi THPTQG năm 2023, và cũng là khép lại 12 năm học.
+Phần còn lại của buổi chiều hôm đó là môn Tiếng Anh, tui thi chill chill môn này thoi tại tui thi A00 nên môn này chỉ còn là thủ tục thoi (thật ra tui cũng ngoo tiếng anh vocolo, chỉ đủ đọc dịch đồ thoii ;-;) và... tiếng trống báo hiệu hết giờ làm bài, cũng như tui đã hoàn thành kì thi THPTQG năm 2023, và cũng là khép lại 12 năm học.
 
-.........................................................................
+...................................................................
 
 Sau kì thi thì cũng là lúc tui thu dọn cái bàn học của tui =)) nó bừa bộn không tả được, đề thi giấy tờ quăng tứ tung.
 
@@ -100,13 +100,19 @@ _Đậu NV1 HCMUS_
 Cuối cùng thì toi cũng đậu NV1, cũng shock với bất ngờ lắm chứ =)))) 
 Và đó là khởi đầu của một hành trình mới trên đại học...
 
-## Kết thúc 12 năm học, hành trình mới đang chờ
+## Kết thúc
+
+Và thế là kết thúc thời học sinh ở THPT ròi đó =))
+
+...
+
 Có lẽ tới đây là dừng được ròi, cuộc sống trên đại học có lẽ để hoàn thành năm nhất ròi viết luôn nhỉ =)))) (mà có gì để chia sẻ ngoài mấy cái deadline nhiều vocolo đâu)
 
-Giờ hết biết viết gì nữa ròi =)) Lục được hoặc nhớ được thêm gì thì sẽ update, giờ đi ngủ được ròi, sáng còn môn ĐSTT đang chờ nữa ;-; bye byeeeeee 🥱🥱🥱
+Giờ hết biết viết gì nữa ròi =)) Lục được hoặc nhớ được thêm gì thì sẽ update, giờ đi ngủ được ròi, sáng còn môn ĐSTT đang chờ nữa ;-; bye byeeeeee 🥱🥱
 
 (post bài lên cái là ngủ liền)
 
 Date of writing : Thủ Đức - 28/05/2024 - 01:08:50
+Update 1 : 28/05/2024 - 09:57:44
 
 _Cừn_
