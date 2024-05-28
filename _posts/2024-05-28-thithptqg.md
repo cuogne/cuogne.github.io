@@ -4,7 +4,6 @@ description: >-
   chuyện thi thptqg của tui vào 1 năm trước :>
 title: Thi THPTQG của tui ra sao ?
 date: 2024-05-28 01:08:50 +0700
-author: Cừn
 categories: [Blog, Tâm sự]
 ---
 
@@ -44,20 +43,41 @@ _Hình ảnh anh Cừn ôn thi cực chill_
 
 Nhìn vào ảnh thì từ đoạn 20/3/2023 tới 3/5/2023, kho ảnh của tui toàn game với game =))))
 
+Toi không có xóa mấy tấm ảnh học hành của toi đâu =)) tôi toàn cap màn hình game thật mà
+
 Thật ra tui chả có cách gì đặc biệt cả, chỉ lấy đề + sưu tầm đề trên mạng + đề trên lớp về giải thui, chỗ nào lũng hoặc sai thì note lại. Tui còn chả cày mấy câu VDC mà, một phần vì có bấm giờ giải đề thử nhma làm mấy câu trên kia thoi là đứng hình ròi, chưa kịp đụng mấy câu VDC nữa là hết giờ nên cũng ít ôn VDC, một phần là vì nó khó vocolo deo' biet giai =)))))
 
-Bùmmmm, tui thi ĐGNL dc 850+ =))) nó cũng là ngoài mong đợi của tui, điểm phần Toán với KHTN gánh hết, Tiếng Việt với Tiếng Anh nát bấy =)))
+Sau khi học xong trên trường và kết thúc năm thì toi còn bị bắt ở lại ôn trên trường nữa (ôn 6 môn thi tốt nghiệp á) tui thì thích tự học hơn mà lại kh dc nghỉ mấy cái này trên trường nữa, thế là lên trường toi toàn chơi =)))))) nhma tối học + giải đề đàng hoàng
 
-Vàaaaaaa
+Combo nhạc Spotify + 1 ly Sting đá + 1 đề thi làm bao chil hehe =)))
+
+Bùmmmm, tui thi ĐGNL đợt 2 dc 850+ =))) nó cũng là ngoài mong đợi của tui, điểm phần Toán với KHTN gánh hết, Tiếng Việt với Tiếng Anh nát bấy =)))
+
+![DGNL](/img/thptqg2023/dgnl.png){: w="500" h="200" }
+_điểm toán với điểm khtn gánh hết_
+
+Với số điểm này thì rớt cái ạch dô bằng ptxt ĐGNL của HCMUS luôn ;-;
+
+23/06/2023 - Vàaaaaaa
 
 ![Đỗ UIT](/img/thptqg2023/dauuit.jpeg){: w="500" h="200" }
 _Trúng tuyển sớm UIT bằng ĐGNL_
 
-Lúc này là hoàn thành mục tiêu, so chill =)))) thi thptqg chỉ còn là vấn đề thi tốt nghiệp thui
+Thật ra bữa biết điểm chuẩn là 23/6 ròi nhma tới 26/6 mới có mail xác nhận cccd
+
+Công bố gì trước có 6 ngày =))))
+
+Lúc này là hoàn thành mục tiêu, so chill dù kh phải NV1 nhma cũng là một trường tui me từ đầu rồi =)))) thi thptqg chỉ còn là vấn đề thi tốt nghiệp thui
 
 Nhưng mà mình nhận ra là, ôn thi nguyên năm mà cuối cùng lại không thi hết sức ư
 
 Thế là thi chill chill mà thi vẫn hết sức, đi thi mặt cũng căng thẳng áp lực đồ cho giống với bạn bè (làm màu belike) =))) (thật ra là đỗ UIT sớm nên tâm lý cũng thoải mái hehe)
+
+Mấy ngày gần thi thì tui luôn giữ tâm trạng thoải mái nhất, vẫn game gủng bình thường thoi nhma hạn chế đi lại xa tại gần thi rồi =)))) Tối thì móc lý thuyết ra đọc cho nhớ, kh có giải đề nữa (Lý thuyết, Vận dụng, VDC gì 1 câu cũng 0.25đ mà nên sai lí thuyết thì tức chết)
+
+Thi THPTQG thì cũng nên học mẹo như là mẹo giải nhanh hoặc là casio =))) nhma với điều kiện là phải hiểu bản chất trước chứ kh là cook (Dô thi tui cũng casio toán khá nhiều mà ;-;)
+
+Cái đề làm tui shock nhất sau khi thi xong là đề Hóa =)))) mă cho cái đề minh họa có chất béo, năng lượng, phân bón ròi điện phân đồ, có mấy câu của tụi lớp 10 học chương trình mới nữa, ôn cũng một mớ xong dô thi cho rất nhiều lý thuyết luôn mà kh thấy chất béo hay là phân bón nào cả =)))) Đó là lý do đừng bao giờ tin vào đề minh họa.
 
 Một bí kíp nhỏ của tui khi thi thật được mấy anh chị truyền lại (cái này chắc có nhiều bạn biết rồi)
 
@@ -67,9 +87,11 @@ Một bí kíp nhỏ của tui khi thi thật được mấy anh chị truyền 
 ![Giấy Báo](/img/thptqg2023/giaybao.jpeg){: w="400" h="200" }
 _Tờ giấy báo dự thi của Cừn sau khi thi 3 môn Lý Hóa Sinh_
 
-- Lúc bắt đầu tính giờ làm bài môn Sinh, tui làm đúng 10p =)))) (Thật ra có mấy câu nó dễ như kiểu chống liệt á, làm xong biết không rớt tốt nghiệp rồi nên lụi lẹ). Xong là lấy giấy bút giấy nháp + đề thi sinh lúc đó rồi vặn hết công sức thoi.
+- Mỗi lần thi xong một môn, giám thị sẽ thu giấy nháp và đề thi môn đó lại chứ ít khi để tâm đến cái giấy báo lắm, tại giấy báo dự thi check ngoài cửa rồi thoi á =))) (nói chứ tùy nơi + tùy giám thị nên kh đảm bảo 100% dc)
 
-- Cuối cùng, sau khi kết thúc thì tui giải thêm dc 1 câu Lý + 2 câu Hóa =))))))) (lúc ra check đáp án thì mấy câu tui giải trong lúc đó đều đúng hết, + 0,75đ hehehe) nhưng mà lại sai ngu vài câu lý thuyết xàm ;-; với lụi Lý với Hóa kh dính nữa chứ
+- Lúc bắt đầu tính giờ làm bài môn Sinh, tui làm đúng 10p =)))) (Thật ra có mấy câu nó dễ như kiểu chống liệt á, làm xong biết không rớt tốt nghiệp rồi nên lụi lẹ). Xong là lấy giấy bút giấy nháp + đề thi sinh lúc đó rồi vặn hết công sức thoi. Tận dụng luôn cái mặt giấy trắng của đề Sinh luôn nha, được nhiêu hay bấy nhiêu, với giải nháp thì chia vùng ra để tránh bị lộn câu này với câu kia.
+
+- Cuối cùng, sau khi kết thúc buổi thi hôm đó thì tui giải thêm dc 1 câu Lý + 2 câu Hóa =))))))) (lúc ra check đáp án thì mấy câu tui giải trong lúc đó đều đúng hết, + 0,75đ hehehe) nhưng mà lại sai ngu vài câu lý thuyết xàm ;-; với lụi Lý với Hóa kh dính nữa chứ
 
 Phần còn lại của buổi chiều hôm đó là môn Tiếng Anh, tui thi chill chill môn này thoi tại tui thi A00 nên môn này chỉ còn là thủ tục thoi (thật ra tui cũng ngoo tiếng anh vocolo, chỉ đủ đọc dịch đồ thoii ;-;) và... tiếng trống báo hiệu hết giờ làm bài, cũng như tui đã hoàn thành kì thi THPTQG năm 2023, và cũng là khép lại 12 năm học.
 
@@ -93,7 +115,7 @@ Và nó cũng tới, đặt nguyện vọng =))) với số điểm thi được
 ![Đặt Nguyện Vọng](/img/thptqg2023/datnv.jpeg){: w="300" h="200" }
 _Nguyện vọng 1 và Nguyện vọng 2 đều là HCMUS_
 
-Vàaaaaaaaaaaa cuối cùng là:
+Vàaaaaaaaaaaa cuối cùng là: 22/08/2023
 ![Đậu HCMUS](/img/thptqg2023/toiiuhcmus.jpeg){: w="600" h="200" }
 _Đậu NV1 HCMUS_
 
@@ -113,6 +135,9 @@ Giờ hết biết viết gì nữa ròi =)) Lục được hoặc nhớ đượ
 (post bài lên cái là ngủ liền)
 
 Date of writing : Thủ Đức - 28/05/2024 - 01:08:50
+
 Update 1 : 28/05/2024 - 09:57:44
+
+Update 2 : 28/05/2024 - 21:26:13
 
 _Cừn_

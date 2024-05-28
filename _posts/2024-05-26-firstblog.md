@@ -4,7 +4,6 @@ description: >-
   About me and First Blog Post in here
 title: My First Blog Post :>
 date: 2024-05-26 13:55:22 +0700
-author: Cừn
 categories: [Blog, Intro]
 
 ---
@@ -16,7 +15,7 @@ Hy vọng không ai đọc được mấy cái post này ;-;
 
 # INTRO đồ =)))
 
-![Arisu Dance](/img/blue-archive-arisu.gif)
+![Arisu Dance](/img/intro/blue-archive-arisu.gif)
 
 ```console
 #include <bits/stdc++.h>
@@ -57,13 +56,13 @@ return 0;
 - Spotify: [Cừn](https://open.spotify.com/playlist/00NUGyjyWXOXmFaSaDvNRX?si=1f16c625fd014ef6)
 
 - UID Genshin Impact : [812437754](https://enka.network/u/812437754/)
-![Genshin Impact](/img/genshin_impact.jpeg)
+![Genshin Impact](/img/intro/genshin_impact.jpeg)
 
 - Ingame Liên Quân Mobile : cừn.
-![Liên Quân Mobile](/img/lq.jpeg)
+![Liên Quân Mobile](/img/intro/lq.jpeg)
 
 ghi xàm vậy đủ rồi, chạy deadline tiếp thoi
 
 I love deadline in HCMUSSSSSSSSS <3 (khong phai tui noi)
 
-<img src="/img/logous.png" alt="HCMUS" width="200"/>
+<img src="/img/intro/logous.png" alt="HCMUS" width="200"/>
