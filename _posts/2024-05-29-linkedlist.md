@@ -9,7 +9,7 @@ categories: [Blog, Code]
 
 Bài viết dựa trên sự tìm hiểu và học hỏi của mình, nếu có sai sót hãy inbox trực tiếp mình để mình fix nhé !
 
-Mình cũng sẽ để link các nguồn mình đã tìm hiểu và học hỏi trong quá trình học lập trình cũng như viết cái blog này bên dưới cuối bài blog.
+Mình cũng sẽ để link các nguồn mình đã tìm hiểu và học hỏi trong quá trình học lập trình cũng như trong quá trình mình viết bài này bên dưới cuối bài blog.
 
 # Linked List - Danh sách liên kết
 ## Danh sách Liên kết là gì? 
@@ -65,23 +65,23 @@ _Cấu tạo của một DSLK đơn_
 
 ## Đặc điểm của DSLK đơn
 
-Do danh sách liên kết đơn là một cấu trúc dữ liệu động, được tạo nên nhờ việc cấp phát động nên nó có một số đặc điểm sau đây:
+Do danh sách liên kết đơn là một cấu trúc dữ liệu động, được tạo nên nhờ việc cấp phát động nên nó có một số ưu nhược điểm sau đây:
 
-### Ưu điểm
+### 1. Ưu điểm
 - Được cấp phát bộ nhớ khi chạy chương trình
 - Có thể thay đổi kích thước một cách linh hoạt, không cần phải khai báo kích thước cố định như mảng. Kích thước tối đa phụ thuộc vào bộ nhớ khả dụng của RAM
 - Chèn và xóa phần tử nhanh chóng. Độ phức tạp là O(1) nếu biết trước vị trí
 - Các phần tử được lưu trữ ngẫu nhiên (không liên tiếp) trong RAM
 
-### Nhược điểm
+### 2. Nhược điểm
 - Duyệt chậm do phải duyệt qua từng Node trong danh sách. Độ phức tạp là O(n)
-- Vì thế nên truy cập phần tử ngẫu nhiên rất chậm vì phải duyệt từ đầu danh sách đến phần tử cần tìm.
+- Vì thế nên truy cập phần tử ngẫu nhiên rất chậm vì phải duyệt từ đầu danh sách đến phần tử cần tìm. (Tìm kiếm tuyến tính - Linear Search)
 - Tốn bộ nhớ: Mỗi node cần phải cấp phát bộ nhớ để lưu con trỏ.
 - Khó quản lý hơn: Việc quản lý các con trỏ phức tạp hơn, dễ gặp lỗi nếu bạn không nắm vững con trỏ.
 
 ## Các thao tác cơ bản trên DSLK đơn
 
-### Khai báo cú pháp của Node
+### 1. Khai báo cú pháp của Node
 
 ```console
 struct Node {
@@ -97,7 +97,23 @@ struct Node {
 ```
 Ở đây mình sử dụng luôn Constructor để khởi tạo các data cụ thể, và để dễ quản lý thì mình chọn kiểu số nguyên (int)
 
-### Thêm một phần tử vào linked list
+Bạn nào không thích dùng constructor luôn như mình thì có thể viết 1 hàm riêng để cấp phát nhé, như bên dưới:
+
+```console
+Node *createNode (int data){
+    Node* node = new Node ;
+    node -> data = data ;
+    node -> next = nullptr ;
+    return node ;
+}
+```
+Lúc dùng các bạn chỉ cần ghi:
+```console
+Node* newNode = createNode(100);
+```
+Là đã cấp phát thành công 1 node có data là 100 đó.
+
+### 2. Thêm một phần tử vào Head hoặc Tail của linked list
 ``` console
 void addData(Node*& head, int data){
     Node* newNode = new Node(data);
@@ -117,7 +133,7 @@ Bên trên là một hàm thực hiện chức năng thêm data vào cuối link
 
 Ở đây hàm addData nhận vào 2 tham số là con trỏ head và biến data. Tham số Node*& head là một tham chiếu đến một con trỏ. Điều này cho phép hàm sửa đổi con trỏ head trong hàm gọi.
 
-- Giải thích Code
+#### a. Giải thích Code
 
 ```console
 Node* newNode = new Node(data);
@@ -129,7 +145,6 @@ Cú pháp này chỉ khả dụng khi các bạn sử dụng constructor như m�
 ```console
 Node* newNode = new Node {data,nullptr};
 ```
-
 
 ```console
 if (head == nullptr){
@@ -150,10 +165,347 @@ else {
 
 Nếu danh sách đã có phần tử rồi, ta tạo một con trỏ temp tạm thời dể duyệt qua danh sách, tránh sử dụng trực tiếp con trỏ head.
 
-Sau đó, tạo một vòng lặp để duyệt qua danh sách. Vòng lặp kết thúc chỉ khi vòng lặp duyệt tới phần tử cuối cùng trong linked list (lúc này con trỏ next của node cuối đang trỏ vào nullptr đó)
+Sau đó, tạo một vòng lặp để duyệt qua danh sách. Vòng lặp kết thúc chỉ khi vòng lặp duyệt tới phần tử cuối cùng trong linked list (lúc này node cuối đang trỏ vào nullptr đó)
 
 Câu lệnh temp = temp -> next di chuyển đến nút tiếp theo trong danh sách
 
-Khi thoát khỏi vòng lặp cũng là lúc con trỏ temp đã đi đến cuối danh sách, ta thực hiện thao tác lấy temp -> next = newNode. Vì lúc này temp -> next đang có giá trị là nullptr, nên chỉ cần gắn node mới cấp phát thì ngay lập tức node mới đã được thêm vào cuối danh sách
+Khi thoát khỏi vòng lặp cũng là lúc con trỏ temp đã đi đến cuối danh sách, ta thực hiện thao tác lấy temp -> next = newNode. Vì lúc này khi thoát khỏi vòng lặp, temp -> next đang có giá trị là nullptr, nên chỉ cần gắn node mới cấp phát thì ngay lập tức node mới đã được thêm vào cuối danh sách
 
-Còn vấn đề phải gán lại newNode -> next = nullptr thì không cần đâu, vì phía bên trên mình đã chỉ các bạn sử dụng constructor để khởi tạo các data cụ thể, trong đó có cả next và nó đang được gán bằng nullptr mà.
+Hmm, đọc xong chắc hơi khó hiểu nên các bạn xem ví dụ minh họa với hình ảnh nhé
+
+![Cấp phát động node mới](/img/linkedlist/cpdnewNode.png){: w="400" h="200" }
+_Cấp phát động một Node mới có data là 10 và trỏ vào nullptr_
+
+Ở trên là mình đang cấp phát cho 1 Node chứa data là 10, tương ứng với câu lệnh
+```console
+Node* newNode = new Node(10);
+```
+Bên dưới là Node mình vừa cấp phát và linked list hiện có của mình
+
+![Node và LinkedList](/img/linkedlist/linkedlist.png)
+
+Để thêm 1 Node vào trong linked list (ở đây mình xét 2 trường hợp cơ bản nhất là add vào đầu và đuôi của dslk nhé) thì ta làm như sau:
+
+#### b. Đối với head
+
++ Bước 1: Lấy next của newNode trỏ vào head
++ Bước 2: Lấy head trỏ ngược lại vào node
+
+![Trỏ vào head](/img/linkedlist/ptrtohead.png)
+
+```console
+newNode -> next = head ;
+head = newNode ;
+
+// 10 -> 40 -> 30 -> 60
+```
+
+#### c. Đối với tail
+
++ Bước 1: Tạo 1 Node tạm tên là temp để quản lí danh sách, tránh sử dụng trực tiếp head
+
+![Bước 1](/img/linkedlist/buoc1.png)
+
+```console
+Node* temp = head ;
+```
+
++ Bước 2: Duyệt cho temp đi đến node cuối cùng của danh sách
+
+![Bước 2](/img/linkedlist/buoc2.png)
+
+```console
+while (temp -> next != nullptr){
+    temp = temp -> next ;
+}
+// Khi thoát khỏi vòng lặp cũng là lúc temp ở node cuối cùng trong danh sách
+```
+
+>Ở đây chắc là có bạn thắc mắc tại sao điều kiện lại là temp -> next != nullptr mà không phải là temp != nullptr
+
+> Khi temp != nullptr thì temp sẽ duyệt đến cuối cùng (kể cả nullptr), nên khi temp = nullptr thì vòng lặp sẽ ngừng, lúc đó thì kh có con trỏ next nào còn ở đó cả, vì temp lúc này đang ở nullptr rồi thì còn next ở đâu nữa =))))
+
+> ![Nullptr](/img/linkedlist/nullptr.png){: w="400" h="200" }
+> _Nếu temp = nullptr thì ra sao_
+
+> Nên ta phải chặn trước bằng cách temp -> next != nullptr, tức là khi temp đang ở node cuối cùng thì con trỏ next của node đó sẽ trỏ vào nullptr, lúc đó thì ta sẽ biết được là node kế tiếp là nullptr nên sẽ dừng ở đây, không duyệt nữa.
+
++ Bước 3: Lấy con trỏ next của node cuối cùng trỏ vào node cần thêm vào trong danh sách (ở đây là newNode)
+
+![Bước 3](/img/linkedlist/buoc3.png)
+
+```console
+temp -> next = newNode ;
+// 40 -> 30 -> 60 -> 10
+```
+
+Vậy là chúng ta đã thêm thành công 1 node vào trong linked list rồi !!!
+
+### 3. Thêm vào một vị trí đã biết trước trong Linked List
+
+Ở trên chúng ta đã nói qua về cách thêm 1 node vào head và tail, vậy nếu giờ chúng ta thêm ở một vị trí không phải head và tail thì sao ?
+
+Ở đây mình giả sử chúng ta biết trước giá trị của một node nào đó trong linked list nhé, mình gọi nó là x đi =))) (khi vào ví dụ mình sẽ cho một số cụ thể nào đó)
+
+Mình sẽ sử dụng một kỹ thuật có tên gọi là "Hai con trỏ" để có thể thêm vào trước và sau của một phần tử dễ dàng hơn.
+
+Còn hai con trỏ là gì hả =))) các bạn có thể search gg về kỹ thuật này nha, đại khái là ta sẽ sử dụng 2 biến để quản lý các phần tử ấy mà.
+
+Thật ra vẫn có thể sử dụng 1 con trỏ, nhưng mà nó sẽ khá rắc rối và khó hiểu nên mình quyết định dùng 2 con trỏ để giải thích.
+
+#### a. Thêm 1 node vào phía trước x
+
+Bắt đầu từ thêm vào phía sau trước nhé =)))
+
+```console
+void addBeforeQ(Node*& head, int data, int x) {
+    Node* node = new Node(data);
+
+    if (head == nullptr || head -> data == x) {
+        node -> next = head;
+        head = node;
+        return;
+    }
+
+    Node* cur = head;
+    Node* prev = nullptr;
+
+    while (cur != nullptr && cur->data != x) {
+        prev = cur;
+        cur = cur->next;
+    }
+
+    if (cur != nullptr) {
+        node->next = cur;
+        if (prev != nullptr) {
+            prev->next = node;
+        }
+    }
+}
+```
+Bên trên là đoạn code thực hiện việc thêm 1 node chứa data vào trước phần tử x
+
+Mình sẽ giải thích từ từ nhé
+```console
+if (head == nullptr || head -> data == x) {
+    node -> next = head;
+    head = node;
+    return;
+}
+```
+Dòng này kiểm tra việc danh sách liên kết có đang rỗng hoặc là phần tử đầu tiên của danh sách liên kết đó trùng với phần tử x hay không.
+
+Nếu điều này đúng, sẽ thực hiện gán node đó vào head
+
+```console
+Node* cur = head;
+Node* prev = nullptr;
+```
+Đây chính là kỹ thuật mà mình nói lúc nãy, mình đã tạo ra 2 con trỏ cur(current) và prev(previous). Nó hoạt động ra sao, xem đoạn code bên dưới nhé.
+
+```console
+while (cur != nullptr && cur->data != x) {
+    prev = cur;
+    cur = cur->next;
+}
+```
+Mỗi con trỏ trong mỗi bài toán đều sẽ có những vai trò riêng nhất định. Trong trường hợp này:
+- Con trỏ cur sẽ làm nhiệm vụ lưu trữ node đứng trước
+- Con trỏ prev sẽ làm nhiệm vụ lưu trữ node phía sau của cur
+
+> Để dễ hiểu nhất, bạn cứ tưởng tượng cur là người đi trước, còn prev là người đi sau, và người đi sau đang đi lại những nước đi của người đi trước.
+
+![Prev and Cur](/img/linkedlist/prevandcur1.png)
+![Prev and Cur](/img/linkedlist/prevandcur2.png)
+_Hình ảnh minh họa cách hoạt động của 2 con trỏ prev và cur_
+
+Chúng ta sẽ sử dụng con trỏ cur để duyệt danh sách, con trỏ prev sẽ theo sau sau khi con trỏ cur qua node kế tiếp.
+
+```console
+prev = cur;
+cur = cur->next;
+```
+
+Và cứ thế, khi cur -> data, tức là giá trị của node đó trùng với phần tử x, ta lập tức thoát vòng lặp
+
+> Ở đây mình xét trường hợp các số khác nhau trong danh sách, không tính các phần tử x giống nhau. 
+> Nếu danh sách có nhiều số bằng x thì với cách duyệt này ta sẽ tìm được phần tử x đầu tiên trong danh sách, với khác điều kiện khác như thêm vào phần tử x thứ 2, thứ 3,... trong danh sách thì mình không xét tới
+{: .prompt-info }
+
+```console
+if (cur != nullptr) {
+    node->next = cur;
+    if (prev != nullptr) {
+        prev->next = node;
+    }
+}
+```
+
+Đầu tiên, ta kiểm tra điều kiện trước xem cur có phải là nullptr không, vì trong trường hợp trên của vòng while, thì vòng lặp vẫn có thể thoát ra nếu cur = nullptr, tức là ta không tìm thấy phần tử x trong danh sách
+
+Nếu thỏa điều kiện cur != nullptr thì ta tiến hành:
+- Lấy con trỏ next của node cần thêm vào gán bằng cur
+- Kiểm tra điều kiện của prev, nếu thỏa điều kiện, lấy next của prev trỏ vào node
+
+Hmm, các bạn xem hình minh họa bên dưới nha
+
+![Ảnh minh họa](/img/linkedlist/addbefore_1.png)
+
+Ở đây, mình giả sử mình cần thêm 1 node có data là 10 vào trước phần tử 60 (thay x = 60 á)
+
+Cách thức duyệt ở trên mình cũng đã nói rồi, nên mình sẽ không nói lại ở đây. Ở đây mình bàn về cách thêm phần tử 10 vào trước 60.
+ 
+Cur đang nắm giữ node mang giá trị 60, còn prev đang nắm giữ node mang giá trị 30
+
+![Lấy node -> next = cur](/img/linkedlist/addbefore_2.png)
+
+```console
+node -> next = cur;
+```
+
+Ta lấy next của node mà cur đang giữ trỏ vào node cần thêm vào, tạo luồng liên kết giữa 10 và 60
+
+![Lấy prev -> next = node](/img/linkedlist/addbefore_3.png)
+
+```console
+prev -> next = node;
+```
+
+Lấy con trỏ next của node mà prev đang giữ, trỏ vào node cần thêm vào
+
+![Hoàn thành](/img/linkedlist/addbefore_4.png)
+
+Hình ảnh sau thi ta thêm node có giá trị là 10 vào trước node 60
+
+Vậy là ta có 1 danh sách liên kết gồm 4 node là 40 -> 30 -> 10 -> 60
+
+Đó là cách sử dụng 2 con trỏ để quản lý các node và cách tạo liên kết cho các node cần thêm vào
+
+#### b. Thêm 1 node vào sau x
+Nếu các bạn đã hiểu cách thêm 1 node vào trước x, thì thêm phía sau cũng tương tự v thoi không khác quá nhiều đâu =))))
+
+```console
+void addAfterX(Node*& head, int data, int x) {
+    Node* node = new Node(data);
+
+    if (head == nullptr) {
+        head = node;
+        return;
+    }
+
+    Node* prev = head;
+    Node* cur = head->next;
+
+    while (prev != nullptr && prev->data != x) {
+        prev = cur;
+        if (cur != nullptr) {
+            cur = cur->next;
+        }
+    }
+
+    if (prev != nullptr) {
+        node->next = cur;
+        prev->next = node;
+    }
+}
+```
+
+Ở đây có sự khác một xíu giữa 2 con trỏ. 
+Bây giờ:
+- Con trỏ prev sẽ nắm giữ phần head
+- Con trỏ cur sẽ giữ node phía sau head (tức là head -> next) 
+
+Và chúng ta sẽ dùng con trỏ prev để duyệt danh sách
+
+> Điều kiện head có nullptr hay không đã check ở trên ròi nha
+
+![Khởi tạo 2 con trỏ](/img/linkedlist/addafter_1.png)
+
+```console
+while (prev != nullptr && prev->data != x) {
+    prev = cur;
+    if (cur != nullptr) {
+        cur = cur->next;
+    }
+}
+```
+Ở đây ta lấy prev = cur qua mỗi lần lặp và nhớ kiểm tra xem cur có bằng nullptr hay không, vì ta dùng prev để duyệt chính, còn cur đi trước nên ta không thể quản lý cur 1 cách trực tiếp được.
+
+> Nếu cur = nullptr thì prev sẽ ở node cuối cùng, lúc này ta cũng không cần quan tâm cur lắm vì thứ ta cần là thêm phần tử vào phía sau prev.
+
+Ở đây mình lấy ví dụ cho trường hợp cur = nullptr luôn nha, các trường hợp khác cũng tương tự thoi với cách duyệt cũng tương tự như thêm vào trước vậy á.
+
+> that ra tai tao buon ngu qua nen t luoi viet do
+
+![Buon ngu qua](/img/linkedlist/addafter_2.png)
+
+Ở đây mình lấy ví dụ cần thêm node chứa data là 10 vào phía sau node chứa data là 60
+
+Trên hình là cũng đã duyệt 2 con trỏ đi qua hết rùi nha
+
+![Lấy node -> next = cur nè](/img/linkedlist/addafter_3.png)
+
+```console
+node -> next = cur ;
+```
+
+![Lấy prev -> next = node](/img/linkedlist/addafter_4.png)
+
+```console
+prev -> next = node ;
+```
+
+Cách thức cũng tương tự như thêm 1 node vào trước x vậy đó =))))
+
+#### c. [Bonus] Sử dụng một con trỏ để duyệt thì sao =)))
+
+Phần này mình bonus thoi nha, cách sử dụng 1 con trỏ duy nhất để có thể thêm vào trước hoặc sau x. Cái này các bạn tự tìm hiểu nha (Mà đọc tới đây chắc hiểu hết mà, không khó lắm đâu, có thể tự suy luận ra được hehee)
+
+Sau khi đọc xong cả 2 cách nếu thấy cách nào dễ hiểu hơn thì cứ sài cách đó nha =))) kết quả tương tự nhau nhma chỉ khác cách code thôi.
+
+> Thật ra cũng có nhiều người thấy cách này dễ hơn, nhma mình muốn các bạn biết tới kỹ thuật 2 con trỏ á nên mới phân tích kỹ cách kia ở trên =)))
+
+- Thêm một node vào sau x
+
+```console
+void addAfterQ(Node*& head, int data, int x) {
+    Node* node = new Node(data);
+    Node* temp = head;
+
+    while (temp != nullptr && temp->data != x) {
+        temp = temp->next;
+    }
+
+    if (temp != nullptr) {
+        node->next = temp->next;
+        temp->next = node;
+    }
+}
+```
+- Thêm một node vào trước x
+
+```console
+void addBeforeQ(Node*& head, int data, int x) {
+    Node* node = new Node(data);
+
+    if (head == nullptr || head -> data == x) {
+        node -> next = head;
+        head = node;
+        return;
+    }
+
+    Node* temp = head;
+
+    while (temp->next != nullptr && temp->next->data != x) {
+        temp = temp->next;
+    }
+
+    if (temp->next != nullptr) {
+        node->next = temp->next;
+        temp->next = node;
+    }
+}
+```
+### 4. Xóa một node trong linked list
+
+...
