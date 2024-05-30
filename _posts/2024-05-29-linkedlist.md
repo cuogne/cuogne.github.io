@@ -146,6 +146,14 @@ Cú pháp này chỉ khả dụng khi các bạn sử dụng constructor như m�
 Node* newNode = new Node {data,nullptr};
 ```
 
+hoặc là nếu bạn nào viết hàm cấp phát như mình ở trên thì
+
+```console
+Node* newNode = createNode(data);
+```
+
+Tiếp theo là:
+
 ```console
 if (head == nullptr){
     head = newNode ;
@@ -251,11 +259,13 @@ Mình sẽ sử dụng một kỹ thuật có tên gọi là "Hai con trỏ" đ�
 
 Còn hai con trỏ là gì hả =))) các bạn có thể search gg về kỹ thuật này nha, đại khái là ta sẽ sử dụng 2 biến để quản lý các phần tử ấy mà.
 
-Thật ra vẫn có thể sử dụng 1 con trỏ, nhưng mà nó sẽ khá rắc rối và khó hiểu nên mình quyết định dùng 2 con trỏ để giải thích.
+Thật ra vẫn có thể sử dụng 1 con trỏ, nhưng mà kỹ thuật 2 con trỏ được áp dụng khá nhiều nên mình muốn giới thiệu đến các bạn luôn. 
+
+> Bên dưới mình vẫn sẽ giới thiệu cách sử dụng một con trỏ nhé
 
 #### a. Thêm 1 node vào phía trước x
 
-Bắt đầu từ thêm vào phía sau trước nhé =)))
+Bắt đầu từ thêm vào phía trước nhé =)))
 
 ```console
 void addBeforeQ(Node*& head, int data, int x) {
@@ -381,7 +391,7 @@ Vậy là ta có 1 danh sách liên kết gồm 4 node là 40 -> 30 -> 10 -> 60
 
 Đó là cách sử dụng 2 con trỏ để quản lý các node và cách tạo liên kết cho các node cần thêm vào
 
-#### b. Thêm 1 node vào sau x
+#### b. Thêm 1 node vào phía sau x
 Nếu các bạn đã hiểu cách thêm 1 node vào trước x, thì thêm phía sau cũng tương tự v thoi không khác quá nhiều đâu =))))
 
 ```console
@@ -435,8 +445,6 @@ while (prev != nullptr && prev->data != x) {
 
 Ở đây mình lấy ví dụ cho trường hợp cur = nullptr luôn nha, các trường hợp khác cũng tương tự thoi với cách duyệt cũng tương tự như thêm vào trước vậy á.
 
-> that ra tai tao buon ngu qua nen t luoi viet do
-
 ![Buon ngu qua](/img/linkedlist/addafter_2.png)
 
 Ở đây mình lấy ví dụ cần thêm node chứa data là 10 vào phía sau node chứa data là 60
@@ -459,11 +467,13 @@ Cách thức cũng tương tự như thêm 1 node vào trước x vậy đó =))
 
 #### c. [Bonus] Sử dụng một con trỏ để duyệt thì sao =)))
 
-Phần này mình bonus thoi nha, cách sử dụng 1 con trỏ duy nhất để có thể thêm vào trước hoặc sau x. Cái này các bạn tự tìm hiểu nha (Mà đọc tới đây chắc hiểu hết mà, không khó lắm đâu, có thể tự suy luận ra được hehee)
+Phần này mình dùng 1 con trỏ duy nhất để có thể thêm vào trước hoặc sau x. Cái này các bạn tự tìm hiểu nha (Mà đọc tới đây chắc hiểu hết mà, không khó lắm đâu, có thể tự suy luận ra được hehee)
 
 Sau khi đọc xong cả 2 cách nếu thấy cách nào dễ hiểu hơn thì cứ sài cách đó nha =))) kết quả tương tự nhau nhma chỉ khác cách code thôi.
 
 > Thật ra cũng có nhiều người thấy cách này dễ hơn, nhma mình muốn các bạn biết tới kỹ thuật 2 con trỏ á nên mới phân tích kỹ cách kia ở trên =)))
+
+> that ra tai tao buon ngu qua nen t luoi viet do
 
 - Thêm một node vào sau x
 
@@ -507,5 +517,7 @@ void addBeforeQ(Node*& head, int data, int x) {
 }
 ```
 ### 4. Xóa một node trong linked list
+
+> luoi qua, nao ranh thi viet tiep
 
 ...
