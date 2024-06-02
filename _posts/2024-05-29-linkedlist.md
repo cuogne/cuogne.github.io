@@ -441,9 +441,9 @@ while (prev != nullptr && prev->data != x) {
 ```
 Ở đây ta lấy prev = cur qua mỗi lần lặp và nhớ kiểm tra xem cur có bằng nullptr hay không, vì ta dùng prev để duyệt chính, còn cur đi trước nên ta không thể quản lý cur 1 cách trực tiếp được.
 
-> Nếu cur = nullptr thì prev sẽ ở node cuối cùng, lúc này ta cũng không cần quan tâm cur lắm vì thứ ta cần là thêm phần tử vào phía sau prev.
+> Nếu cur = nullptr thì prev sẽ ở node cuối cùng, lúc này ta sẽ ngưng trỏ cur = cur -> next và chỉ còn kiểm tra prev thôi. Nếu prev = nullptr luôn thì cur = prev = nullptr, lúc này danh sách liên kết không tồn tại phần tử x.
 
-Ở đây mình lấy ví dụ cho trường hợp cur = nullptr luôn nha, các trường hợp khác cũng tương tự thoi với cách duyệt cũng tương tự như thêm vào trước vậy á.
+Ở đây mình lấy ví dụ cho trường hợp cur = nullptr và prev đang ở node cuối luôn nha, các trường hợp khác cũng tương tự thoi với cách duyệt cũng tương tự như thêm vào trước vậy á.
 
 ![Buon ngu qua](/img/linkedlist/addafter_2.png)
 
