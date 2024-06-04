@@ -120,7 +120,7 @@ Là tập tin đã được đánh dấu theo dõi trong Git. Trạng thái Trac
 
 ### Cài đặt Git
 
-Cài đặt Git: các bạn có thể cài từ trang chủ của Git dựa vào hệ điều hành máy tương ứng nhé
+Các bạn có thể cài từ trang chủ của Git dựa vào hệ điều hành máy tương ứng nhé
 
 [Link Tải Git](https://git-scm.com/downloads)
 
@@ -141,7 +141,7 @@ git config --global user.email "email@example.com"
 
 + Rồi gõ vào ô "Repository Name" để tạo tên của Repository sau đó ấn "Create Repository" là được
 
-### Khởi tạo 1 kho lưu trữ (Repository)
+### Khởi tạo 1 kho lưu trữ (Repository) trên máy của bạn
 
 Ở đây mình sẽ hướng dẫn trên Terminal của VSCode nhé
 
@@ -247,7 +247,7 @@ git log
 
 Các bạn có thể thấy là nó hiển thị toàn bộ các commit trước đó bao gồm tên người commit, ngày giờ và cũng như nội dung.
 
-### Đồng bộ code từ máy lên github
+### Đồng bộ code từ máy Local lên Github
 
 ```console
 git remote add origin https://github.com/<user_name_github>/<name_of_repository>.git
@@ -263,7 +263,9 @@ Ví dụ như của mình thì sẽ là
 git remote add origin https://github.com/cuogne/Testgit.git
 ```
 
-### Push code lên
+Sau khi bạn thực hiện lệnh này thì ở những lần push sau trong folder này, bạn sẽ không cần lặp lại lệnh này nữa.
+
+### Push code lên Github
 
 Đây là bước cuối cùng, đưa code từ local repo lên remote repo
 
@@ -280,7 +282,7 @@ Ngày xưa thì nó là master nhma giờ thì đa số đổi thành main hết
 git push origin main
 ```
 
-sau khi thực hiện xong, đợi một chút để code được push lên
+Sau khi thực hiện xong, đợi một chút để code được push lên
 
 ![](/img/howtousegit/pushcode.png)
 
@@ -323,12 +325,6 @@ git checkout demo
 ```
 
 ![](/img/howtousegit/checkout.png)
-
-> Để xóa 1 branch, bạn phải chuyển qua branch khác không phải branch cần xóa, sau đó chạy
-
-> ```console
-> git branch -d [branch_name]
-> ```
 
 Sau đó, bạn có thể tạo file cũng như làm việc trên nhánh này mà không ảnh hưởng tới nhánh chính (main).
 

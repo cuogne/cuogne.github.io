@@ -518,6 +518,246 @@ void addBeforeQ(Node*& head, int data, int x) {
 ```
 ### 4. Xóa một node trong linked list
 
-> luoi qua, nao ranh thi viet tiep
+Đã có thêm rồi thì tất nhiên phải có xóa chứ đúng không
 
-...
+Muốn xóa một node nào đó trong linked list, ta phải biết được nó là node nào, chứa data là gì, ở vị trí nào, thỏa điều kiện mà mình cần phải xóa không.
+
+#### a. Xóa node là head
+
+Dối với head thì chúng ta chỉ cần sử dụng 1 con trỏ duy nhất để duyệt thoi. Trong trường hợp này ta lấy chính con trỏ head luôn.
+
+```console
+void deleteHead(Node*& head){
+    if (head == nullptr){
+        return ;
+    }
+
+    Node* temp = head ;
+    head = temp -> next ;
+    delete temp ;
+}
+```
+
+Đầu tiên, ta kiểm tra xem linked list có rỗng kh, nếu rỗng thì return luôn.
+
+Ở đây, ta sẽ tạo 1 node tạm tên là temp để giữ node cần xóa (Trong trường hợp này chính là node được quản lí bởi head đó)
+
+![](/img/linkedlist/deletehead1.png)
+
+Sau đó, ta di chuyển head sang node kế tiếp bằng câu lệnh
+
+```console
+head = head -> next ;
+```
+
+![](/img/linkedlist/deletehead2.png)
+
+Cuối cùng, chúng ta xóa node được giữ bởi temp bằng câu lệnh
+
+```console
+delete temp ;
+```
+
+![](/img/linkedlist/deletehead3.png)
+
+Khi bạn xóa một node trong linked list, bạn thực sự đang giải phóng vùng nhớ mà node đó đang chiếm giữ. Điều này có nghĩa là dữ liệu được lưu trữ trong node đó và con trỏ đến node tiếp theo trong danh sách sẽ không còn tồn tại nữa.
+
+Tuy nhiên, việc giải phóng vùng nhớ không tự động làm cho các con trỏ khác đang trỏ đến node đó trở thành NULL. Nếu bạn có một con trỏ khác đang trỏ đến node đã bị xóa, con trỏ đó sẽ trở thành "dangling pointer" (con trỏ bị treo), tức là nó đang trỏ đến một vùng nhớ không hợp lệ. Sử dụng dangling pointer có thể dẫn đến lỗi và làm cho chương trình của bạn không ổn định.
+
+(Phần này mình sẽ đề cập ở bên dưới)
+
+#### b. Xóa node là tail
+
+Giờ chúng ta sẽ xóa node cuối cùng trong linked list, tức là node có con trỏ đang trỏ vào nullptr ấy
+
+Mình sẽ dùng 2 con trỏ nhé (một con trỏ vẫn được nha)
+
+```console
+void deleteTail(Node*& head){
+    if (head == nullptr){
+        return ;
+    }
+
+    if (head -> next == nullptr){
+        delete head ;
+        head = nullptr ;
+        return ;
+    }
+
+    Node* cur = head ;
+    Node* prev = nullptr ;
+    while (cur -> next != nullptr){
+        prev = cur ;
+        cur = cur -> next ;
+    }
+
+    delete cur ;
+    if (prev != nullptr){
+        prev -> next = nullptr ;
+    }
+}
+```
+
+2 vòng if đầu tiên chỉ là kiểm tra các điều kiện đặc biệt
+
+- Nếu head == nullptr, tức là linked list rỗng thì return luôn thôi
+
+- Nếu head -> next == nullptr, tức là linked list chỉ có 1 node duy nhất, lúc này node đó vừa là head, cũng vừa là tail nên ta thực hiện xóa node đó như xóa head vậy.
+
+Sau khi đã kiểm tra, nếu kh có gì xảy ra, ta sẽ tạo 2 con trỏ cur và prev. Cách thức hoạt  của 2 con trỏ tương tự như 2 con trỏ trong phần [Thêm 1 node vào trước x](#a-thêm-1-node-vào-phía-trước-x) vậy nên mình sẽ không nói lại nhé.
+
+![](/img/linkedlist/deletetail1.png)
+
+Sau khi duyệt xong, 2 con trỏ của chúng ta sẽ ở vị trí như hình. Ta lập tức
+
+```console
+delete cur ;
+```
+xóa đi node cur, tức là node cuối cùng trong linked list.
+
+![](/img/linkedlist/deletetail2.png)
+
+Lúc này, con trỏ prev sẽ rơi vào trạng thái "danging pointer" như ở trên mình đã có nói qua. Vì vậy, để tiếp tục linked list. Ta sẽ
+
+```console
+if(prev != nullptr){
+    prev -> next = nullptr ;
+}
+```
+
+![](/img/linkedlist/deletetail3.png)
+
+Vậy là ta đã thành công xóa đi node cuối cùng trong linked list rồi
+
+#### c. Xóa một node đã biết trước
+
+Ở trên, chúng ta đã biết cách xóa đi node đầu và node cuối trong linked list, vậy còn mấy node ở giữa thì sao ?
+
+Ở đây mình sẽ giả sử chúng ta cần xóa 1 node có data = x đi chẳng hạn. Kỹ thuật sử dụng vẫn là 2 con trỏ nhé.
+
+```console
+void deleteX(Node*& head, int x){
+    if (head == nullptr){
+        return ;
+    }
+
+    Node* cur = head ;
+    Node* prev = nullptr ;
+    
+    while (cur != nullptr && cur -> data != x){
+        prev = cur ;
+        cur = cur -> next ;
+    }
+
+    if (cur == nullptr){
+        return ;
+    }
+
+    if (prev == nullptr){
+        head = head -> next ;
+    }
+    else {
+        prev -> next = cur -> next ;
+    }
+    delete cur ;
+}
+```
+
+Đầu tiên, như thường lệ, ta vẫn kiểm tra xem danh sách có rỗng kh, nếu rỗng thì trả về luôn
+
+Tiếp theo, ta khởi tạo 2 con trỏ cur và prev. Sài cũng nhiều rồi nên chắc khỏi nói lại ha. Cách duyệt y chang [Thêm 1 node vào trước x](#a-thêm-1-node-vào-phía-trước-x) vậy.
+
+Ở đây mình sẽ giả sử là xóa đi node có data là 60 nhé.
+
+![](/img/linkedlist/deletemid1.png)
+
+Lúc này, con trỏ cur đã tìm được node mang data là 60. Trường hợp không tìm dc thì cur == nullptr, lúc này ta return luôn vì kh tìm được node mà ta cần xóa.
+
+```console
+  if (prev == nullptr){
+      head = head -> next ;
+  }
+  else {
+      prev -> next = cur -> next ;
+  }
+  delete cur ;
+```
+
+Đầu tiên, ta kiểm tra con trỏ prev, nếu prev == nullptr, tức là node ta cần xóa đang ở vị trí đầu tiên (chính là head đó). Thì chúng ta chỉ việc thực hiện như [xóa node là head](#a-xóa-node-là-head) vậy.
+
+Còn không, ta sẽ lấy prev -> next = cur -> next ;
+
+Nhìn qua có vẻ khó hiểu ha, xem hình nha.
+
+![](/img/linkedlist/prev->next=cur->next.png)
+_prev -> next = cur -> next_
+
+Ở đây, prev -> next chính là địa chỉ node mà cur đang nắm giữ đó (Ở đây là node 60). Còn cur -> next chính là địa chỉ của node sau cur (ở đây là node 10). 
+
+Lật lại lý thuyết ban đầu một xíu nhé. Một node được cấu tạo từ phần data và con trỏ next. Trong đó, con trỏ next sẽ lưu trữ địa chỉ của node kế tiếp. Vì thế ta mới sử dụng cur -> next để lấy node kế tiếp sau node 60. Mục đích là tìm được node kế tiếp sau khi ta xóa đi node 60 đó.
+
+Ta sẽ thực hiện gán cho prev -> next trỏ qua tới địa chỉ của node 10, bỏ qua node đang được con trỏ cur quản lý, vì mình đang cần xóa đi node cur mà.
+
+Ta đã tạo được đường liên kết giữa node 30 và node 10. Công việc còn lại là xóa đi node 60 thôi.
+
+![](/img/linkedlist/deletemidcur.png)
+
+Vậy là xong rồi đó, chúng ta đã có thể xóa đi một node trong linked list.
+
+Hmm, ở trên mình đã ví dụ cho trường hợp ta xóa đi node có giá trị là x rồi. Vậy thì sau khi đọc xong bài blog này, không biết các bạn có thể thực hiện: "Xóa đi một node thứ k trong linked list không ha". Không khó lắm đâu hehee.
+
+> Bài test nho nhỏ : Xóa đi node thứ k trong linked list
+{: .prompt-info }
+
+### 5. Giải phóng linked list
+
+Vì mỗi node trong linked list đều được ta cấp phát bộ nhớ. Cho nên, sau khi sử dụng xong, ta phải giải phóng chúng. Đây là một bước khá đơn giản nhưng nếu quên thì rất dễ gây ra nhiều hậu quả xấu cho chương trình như rò rỉ bộ nhớ,...
+
+```console
+void freeLinkedList(Node*& head){
+    if (head == nullptr){
+        return ;
+    }
+    else {
+        Node* temp = head ;
+        head = head -> next ;
+        delete temp ;
+    }
+}
+```
+
+### 6. In linked list
+
+Phần này cũng dễ nếu nãy giờ bạn đã nắm vững cách duyệt qua các phần tử trong linked list
+
+```console
+void printLinkedList(Node* head){
+    Node* temp = head ;
+    while (temp != nullptr){
+        cout << temp -> data <<" ";
+        temp = temp -> next ;
+    }
+}
+```
+
+## Lời kết
+
+Qua bài blog này hi vọng các bạn có thể nắm những kiến thức cơ bản nhất của linked list - cũng là hành trang sau này để tiếp tục học các cấu trúc dữ liệu khác khó nhằn và phức tạp hơn trong tương lai. Vì cái DSA này chưa bao giờ là dễ cả =))))))
+
+Thank you so much 
+
+## Các nguồn tài liệu tham khảo
+
+[Danh sách liên kết đơn trong C++](https://topdev.vn/blog/danh-sach-lien-ket-don-trong-c/)
+
+[Series CTDL&GT - Linked List](https://www.youtube.com/watch?v=XduwHI8bbcA)
+
+[Cấu trúc dữ liệu & Giải thuật: Linked List - Danh sách liên kết](https://www.youtube.com/watch?v=gzVTutcs3TY&t=1346s)
+
+[Linked Lists for Technical Interviews - Full Course](https://www.youtube.com/watch?v=Hj_rA0dhr2I&t=161s)
+
+Sách Kĩ Thuật Lập Trình - Trường ĐH KHTN - ĐHQG - HCM
+
+________________
+
+_Cừn_

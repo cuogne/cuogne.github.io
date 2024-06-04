@@ -51,6 +51,14 @@ Sau khi học xong trên trường và kết thúc năm thì toi còn bị bắt
 
 Combo nhạc Spotify + 1 ly Sting đá + 1 đề thi làm bao chil hehe =)))
 
+Toán thì tôi khá mạnh ở hàm số, tích phân cũng như là số phức, khá dở loga với oxyz =)))) thế mà thi thật thì hàm số, với tích phân kh làm dc nhma lại làm dc câu loga mới hay chứ =))))
+
+Lý thì =))) mă cái chương hạt nhân nuốt của tui 0.5đ, lý là cái môn nhiều công thức + lý thuyết rất là khoai, trước đó ôn cũng kỹ lắm rồi mà dô sai ngu ;-;
+
+Hóa thì là một môn cũng khá là mạnh của tôi, xưa thì có skill đồng đẳng hóa các thứ =))) nhma tới lúc thi thật thì lại không có câu chất béo nào cả ;-; Hóa cũng là một môn khá nặng về mặt lý thuyết như môn lý vậy.
+
+Còn lại thì mấy môn như Văn, Sinh với Tiếng Anh học vừa đủ để thi tốt nghiệp thoi, đối với tôi thì không cần mấy môn này điểm cao lắm nên thoải mái.
+
 Bùmmmm, tui thi ĐGNL đợt 2 dc 850+ =))) nó cũng là ngoài mong đợi của tui, điểm phần Toán với KHTN gánh hết, Tiếng Việt với Tiếng Anh nát bấy =)))
 
 ![DGNL](/img/thptqg2023/dgnl.png){: w="500" h="200" }
@@ -126,6 +134,14 @@ Và đó là khởi đầu của một hành trình mới trên đại học...
 
 Và thế là kết thúc thời học sinh ở THPT ròi đó =))
 
+Nói chung thì thi đại học là một kỳ thi vô cùng áp lực và căng thẳng, vì vậy phải luôn giữ cái đầu lạnh, có chiến thuật hợp lý để thi đạt một kết quả tốt nhất. Phân bố thời gian hợp lí giữa chơi và học.
+
+Cuối cùng thì khi nhìn lại năm lớp 12 đó, mình vẫn có thể nói với chính bản thân mình rằng, cách học cũng như chiến thuật ôn thi của mình là hợp lí và nó giúp mình không quá áp lực cũng như căng thẳng trong quá trình thi cử, mình đã lựa chọn và có chiến thuật đúng đắn để có một số điểm tốt trong kì thi cũng như vượt qua được kì thi quan trọng nhất của lớp 12.
+
+Cảm ơn vì những năm tháng đó đã nỗ lực vì tấm vé vào đại học...
+
+HCMUS, I'm coming 
+
 ...
 
 Có lẽ tới đây là dừng được ròi, cuộc sống trên đại học có lẽ để hoàn thành năm nhất ròi viết luôn nhỉ =)))) (mà có gì để chia sẻ ngoài mấy cái deadline nhiều vocolo đâu)
@@ -134,10 +150,14 @@ Giờ hết biết viết gì nữa ròi =)) Lục được hoặc nhớ đượ
 
 (post bài lên cái là ngủ liền)
 
+________________
+
 Date of writing : Thủ Đức - 28/05/2024 - 01:08:50
 
 Update 1 : 28/05/2024 - 09:57:44
 
 Update 2 : 28/05/2024 - 21:26:13
+
+Update 3 : 04/06/2024 - 23:47:59
 
 _Cừn_
