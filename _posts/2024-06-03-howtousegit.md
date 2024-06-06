@@ -141,9 +141,9 @@ git config --global user.email "email@example.com"
 
 + Rồi gõ vào ô "Repository Name" để tạo tên của Repository sau đó ấn "Create Repository" là được
 
-### Khởi tạo 1 kho lưu trữ (Repository) trên máy của bạn
+### Git init
 
-Ở đây mình sẽ hướng dẫn trên Terminal của VSCode nhé
+Khởi tạo 1 kho lưu trữ (Repository) trên máy của bạn, ở đây mình sẽ hướng dẫn trên Terminal của VSCode nhé.
 
 Đầu tiên, các bạn mở thư mục chứa dự án mình cần quản lý trên VSCode, sau đó gõ vào terminal
 
@@ -170,21 +170,15 @@ Sau khi khởi tạo kho lưu trữ trong folder bạn chọn, nếu bạn sử 
 
 ![File chưa Push](/img/howtousegit/filechuapush.png)
 
-Ngoài ra, các bạn có thể clone code từ trên remote về bằng câu lệnh
-```console
-git clone URL
-```
-trong đó URL là link của repo bạn muốn clone về
+### Git status
 
-### Kiểm tra trạng thái các file
-
-Các bạn gõ vào terminal câu lệnh
+Để kiểm tra trạng thái các file, các bạn gõ vào terminal câu lệnh
 
 ```console
 git status
 ```
 
-để kiểm tra trạng thái của các file, sau khi gõ xong nó sẽ hiển thị như hình
+Sau khi gõ xong nó sẽ hiển thị như hình
 
 ![Git Status](/img/howtousegit/gitstatus.png)
 
@@ -208,7 +202,7 @@ git add <file_name>
 git add nhap.cpp
 git add test.cpp
 ```
-#### 2.Add hết file trong thư mục 
+#### 2.Add tất cả file trong thư mục 
 
 Để add toàn bộ file trong thư mục đang quản lý, ta dùng lệnh
 
@@ -234,20 +228,23 @@ git commit -m"add your messages"
 
 Thay dòng chữ {add your messages} đi là được
 
-### Kiểm tra lịch sử commit 
+### Git log
+
+Để kiểm tra lịch sử commit, ta dùng lệnh
 
 Ta dùng lệnh 
+
 ```console
 git log
 ```
-
-để kiểm tra các trạng thái cũng như lịch sử commit 
 
 ![](/img/howtousegit/gitlog.png)
 
 Các bạn có thể thấy là nó hiển thị toàn bộ các commit trước đó bao gồm tên người commit, ngày giờ và cũng như nội dung.
 
-### Đồng bộ code từ máy Local lên Github
+### Git remote add origin
+
+Đồng bộ code từ máy Local lên Github
 
 ```console
 git remote add origin https://github.com/<user_name_github>/<name_of_repository>.git
@@ -265,9 +262,9 @@ git remote add origin https://github.com/cuogne/Testgit.git
 
 Sau khi bạn thực hiện lệnh này thì ở những lần push sau trong folder này, bạn sẽ không cần lặp lại lệnh này nữa.
 
-### Push code lên Github
+### Git push
 
-Đây là bước cuối cùng, đưa code từ local repo lên remote repo
+Đây là bước cuối cùng, đưa code từ local repo lên remote repo, ở đây server chính là github
 
 ```console
 git push origin <name of branch>
@@ -292,7 +289,7 @@ Hmm, tới đây các bạn đã có thể push code lên, gửi cho mọi ngư�
 
 Bên trên chỉ là những lệnh cơ bản nhất. Từ bên dưới, chúng ta sẽ tìm hiểu cách làm việc trên các repo này, cách merge code cũng như cách tạo nhánh để có thể làm việc trên nhiều nhánh khác nhau
 
-### Branch
+### Git branch
 
 Branch là một phần của repository, tương đương với khu vực làm việc độc lập. Khi tạo repository, một nhánh chính (master/main) sẽ được tạo sẵn. Nhánh này có thể chia thành nhiều nhánh con. Những thay đổi trên nhánh con không ảnh hưởng đến nhánh chính, cho phép làm nhiều sửa đổi trên cùng một kho chứa. Ta cũng có thể kết hợp (merge) các nhánh lại với nhau.
 
@@ -338,7 +335,7 @@ _Nhánh demo_
 
 Vậy thì giờ làm cách nào để gộp các nhánh đó vào nhánh chính ?
 
-### Merge
+### Git merge
 
 Đây là hành động ghép code lại với nhau từ nhánh phụ vào nhánh chính
 
@@ -388,6 +385,16 @@ git pull
 ```
 Nếu bạn không đồng bộ, trong lúc làm việc nhóm sẽ xảy ra xung đột giữa các file.
 
+### Git clone
+
+Bạn có thể clone dự án của một người khác trên github bằng cách sử dụng lệnh
+
+```console
+git clone URL
+```
+
+Khi bạn chạy lệnh git clone, Git sẽ tạo một bản sao của repository đó trên máy tính của bạn, bao gồm tất cả các file, lịch sử commit, nhánh, và cài đặt cấu hình.
+
 ##  Các tài liệu tham khảo
 
 Hmm nhiu đây chắc là đủ để sài rồi đó =))) Chúc mấy bạn sài git dui dẻ ;-; 
@@ -403,3 +410,7 @@ Có thể ghé qua các tài liệu này để xem thêm nha, mình cũng có đ
 [Bắt đầu dùng GIT – Sử Dụng Git cơ bản](https://www.hostinger.vn/huong-dan/bat-dau-dung-git-su-dung-git-co-ban)
 
 [Git là gì? Tổng quan về Git cơ bản cho lập trình viên](https://200lab.io/blog/git-la-gi/#c%C6%A1-ch%E1%BA%BF-ho%E1%BA%A1t-%C4%91%E1%BB%99ng-c%C6%A1-b%E1%BA%A3n-c%E1%BB%A7a-git)
+
+______________
+
+_Cừn_
