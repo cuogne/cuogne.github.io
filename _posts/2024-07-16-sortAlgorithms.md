@@ -173,7 +173,7 @@ Trường hợp trung bình và xấu nhất: `(O(n^2))`
   + Nhưng khi cài đặt bằng Danh sách liên kết cũng sẽ nảy sinh vài vấn đề : Do việc truy cập vào 1 phần tử trong danh sách liên kết không mang tính trực truy tức phải mất thời gian tuyến tính. Điều này, có thể làm giảm hiệu suất của giải thuật  
 
 Tuy nhiên, trong thực tế để cài đặt Danh sách Liên kết cho giải thuật này, mọi người có thể tham khảo tại đây : 
-[InsertionSort for Singly Linked List](http://www.geeksforgeeks.org/insertion-sort-for-singly-linked-list/)
+[InsertionSort for Singly Linked List](https://www.geeksforgeeks.org/insertion-sort-for-singly-linked-list/)
 
 ## **3.Thuật toán Bubble Sort (Sắp xếp nổi bọt)** 
 
@@ -296,7 +296,7 @@ void MergeSort(int a[], int left, int right) {
 
 - Đối với hàm mergeSort(…), điều kiện neo đệ quy là : chỉ số `left >= right`. Tức tại điểm xảy ra điều kiện neo, lúc này dãy số đã được phân tách nhỏ nhất có thể (nghĩa là chỉ chứa 1 phần tử), ta gọi các dãy con nhỏ nhất này là các dãy con đơn vị. Lúc này, các dãy con đơn vị đó sẽ đôi một thông qua hàm merge(…) để hợp nhất tạo thành một mảng lớn hơn đã được sắp xếp. Rồi mảng lớn hơn này sẽ gặp một mảng lớn hơn khác để hợp nhất … Quá trình “hổi quy” này liên tục diễn ra cho tới khi chúng trở về lời gọi của hàm đệ quy gốc, để hợp nhất 2 nửa mảng cuối cùng còn lại và trả về một mảng hoàn chỉnh, đầy đủ và đã được sắp xếp
 
-- Trực quan hình ảnh có thể xem tại link sau : [Merge Sort](http://www.geeksforgeeks.org/merge-sort/)
+- Trực quan hình ảnh có thể xem tại link sau : [Merge Sort](https://www.geeksforgeeks.org/merge-sort/)
 
 ### **4.3. Độ phức tạp của giải thuật :**
 
@@ -328,7 +328,7 @@ Từ công thức trên + áp dụng với Định lý Thợ rút gọn (Trang 4
   + Bởi vì điểm mạnh của DSLK đó là khả năng đáp ứng một tập dữ liệu đến một cách liên tục (dữ liệu thực tế). Hơn nữa, các thao tác chèn, sửa, xóa một phần tử trong danh sách liên kết chỉ tốn thời gian O(1), nhanh chóng hơn so với thời gian tuyến tính khi chèn, sửa, xóa một phần tử trong mảng. Áp dụng tính chất của DSLK vào giải thuật Sắp xếp Trộn, sẽ giúp tiết kiệm được vùng nhớ ( tức ko cần sử dụng vùng nhớ ngoài – giữ được tính chất “tại chỗ” của giải thuật), đồng thời giải quyết được các bài toán với luồng dữ liệu đến liên tục (online) trong thực tế cuộc sống
   + Sử dụng thêm biến hasSwapped trong từng đoạn nhỏ mảng ( có nghĩa sử dụng điều kiện này kết hợp làm điều kiện neo trong đệ quy), điều này giúp nhanh chóng nhận biết một số đoạn nhỏ trong mảng đã được sắp xếp rồi, từ đó hạn chế được tối đa số bước đệ quy lãng phí tiếp sau. Tương tự cũng nên kiểm tra xem đoạn nhỏ mảng đó có đang là sắp xếp giảm dần (từ đó ta chỉ việc đảo ngược vị trí các phần tử trong mảng). 
 - Một số bài toán thực tế có thể áp dụng giải thuật Merge Sort : 
-  + Bài toán đếm số đảo ngược :  [Counting Inversion](http://www.geeksforgeeks.org/counting-inversions/)
+  + Bài toán đếm số đảo ngược :  [Counting Inversion](https://www.geeksforgeeks.org/counting-inversions/)
   + Bài toán liên quan tới lĩnh vực sắp xếp tại vùng nhớ ngoài (not sorting in RAM) : [External_Sorting](https://en.wikipedia.org/wiki/External_sorting)
 
 ## **5. Thuật toán Quick Sort (Sắp xếp nhanh)**
@@ -384,13 +384,13 @@ Vấn đề của thao tác lựa chọn Pivot :
 
 ### **5.5. Tối ưu và các bài toán ứng dụng** 
 
-- Tối ưu 1 : Sử dụng phương pháp Quick 3 chiều, có nghĩa là sau khi lựa được giá trị pivot, ta sẽ chia mảng thành 3 phần, gồm các phần tử nhỏ hơn pivot, bằng pivot và lớn hơn pivot ( details at following link : [Quick Sort](http://www.geeksforgeeks.org/quick-sort/)
+- Tối ưu 1 : Sử dụng phương pháp Quick 3 chiều, có nghĩa là sau khi lựa được giá trị pivot, ta sẽ chia mảng thành 3 phần, gồm các phần tử nhỏ hơn pivot, bằng pivot và lớn hơn pivot ( details at following link : [Quick Sort](https://www.geeksforgeeks.org/quick-sort/)
 - Tối ưu 2 : Đối với việc lựa chọn pivot luôn nằm ở cực trái (hoặc cực phải) của mảng mang tới nguy cơ dẫn tới các trường hợp tồi tệ nhất, tức: Mảng đã được sắp xếp theo đúng thứ tự, hoặc mảng đã được sắp xếp theo thứ tự ngược lại, hoặc tất cả các phần tử của mảng đều bằng nhau. Để hạn chế được các tình huống trên, ta sẽ lựa chọn pivot theo những cách khác, như: pivot nằm ở index trung bình, pivot có index ngẫu nhiên, … Sau đó ta có thể dễ dàng quy các bài toán này về bài toán chọn pivot nằm ở cực trái hoặc cực phải
-- Tối ưu 3 : Mặc dù thuật toán QuickSort có tính ổn định, tuy nhiên nó vẫn sử dụng bộ nhớ để lưu các lời gọi đệ quy, trong các trường hợp tồi tệ nó có thể tốn tới lượng bộ nhớ O(n) tức tuyến tính với số lượng phần tử của dãy số. Một số giải pháp tối ưu : Khử đệ quy [Iterative Quick Sort](http://www.geeksforgeeks.org/iterative-quick-sort/), sử dụng lời gọi đệ quy đuôi (tail call, details at this link :[Tail Recursion](http://www.geeksforgeeks.org/quicksort-tail-call-optimization-reducing-worst-case-space-log-n/))
+- Tối ưu 3 : Mặc dù thuật toán QuickSort có tính ổn định, tuy nhiên nó vẫn sử dụng bộ nhớ để lưu các lời gọi đệ quy, trong các trường hợp tồi tệ nó có thể tốn tới lượng bộ nhớ O(n) tức tuyến tính với số lượng phần tử của dãy số. Một số giải pháp tối ưu : Khử đệ quy [Iterative Quick Sort](https://www.geeksforgeeks.org/iterative-quick-sort/), sử dụng lời gọi đệ quy đuôi (tail call, details at this link :[Tail Recursion](https://www.geeksforgeeks.org/quicksort-tail-call-optimization-reducing-worst-case-space-log-n/))
 - Tối ưu 4 : Sử dụng một ưu điểm của giải thuật Insertion Sort, đó là nó sẽ tỏ ra nổi bật khi sắp xếp một lượng dữ liệu nhỏ. Vì vậy, ta sẽ áp dụng Insertion Sort vào những giai đoạn khi mà kích thước của mảng đạt tới (<= 7 phần tử) trong giải thuật Quick Sort
 - Một số cài đặt Quick Sort sử dụng Danh sách liên kết : 
-  + Sử dụng danh sách liên kết đơn :[Singly Linked List](http://www.geeksforgeeks.org/quicksort-on-singly-linked-list/)
-  + Sử dụng danh sách liên kết đôi:[Doubly Linked List](http://www.geeksforgeeks.org/quicksort-for-linked-list/)
+  + Sử dụng danh sách liên kết đơn :[Singly Linked List](https://www.geeksforgeeks.org/quicksort-on-singly-linked-list/)
+  + Sử dụng danh sách liên kết đôi:[Doubly Linked List](https://www.geeksforgeeks.org/quicksort-for-linked-list/)
 
 ## **6.Thuật toán Heap Sort (Sắp xếp vun đống)**
 
@@ -459,15 +459,15 @@ Như vậy, độ phức tạp của giải thuật Heap Sort là : `O(n.log(n))
 
 #### **6.4.2 Nhược điểm :**  
 
-  + Với cách cài đặt trên, giải thuật này chưa có tính chất ổn định. Tuy nhiên, có thể cài đặt giải thuật trên để nó có tính chất ổn định, hãy tham khảo từ nguồn sau đây: [Improve HeapSort](http://www.geeksforgeeks.org/stability-in-sorting-algorithms/)
+  + Với cách cài đặt trên, giải thuật này chưa có tính chất ổn định. Tuy nhiên, có thể cài đặt giải thuật trên để nó có tính chất ổn định, hãy tham khảo từ nguồn sau đây: [Improve HeapSort](https://www.geeksforgeeks.org/stability-in-sorting-algorithms/)
   + Hơi phức tạp trong cài đặt giải thuật
   
 ### **6.5. Sự tối ưu và ứng dụng thực tế**
 
 - Một số ứng dụng của Sắp xếp vun đống có thể kể tới : 
-  + Sort a nearly sorted array : http://www.geeksforgeeks.org/nearly-sorted-algorithm/
-  + K largest (or smallest) elements in an array : http://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/
-  + Applications of Heap Data Structure : http://www.geeksforgeeks.org/applications-of-heap-data-structure/
+  + Sort a nearly sorted array : https://www.geeksforgeeks.org/nearly-sorted-algorithm/
+  + K largest (or smallest) elements in an array : https://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/
+  + Applications of Heap Data Structure : https://www.geeksforgeeks.org/applications-of-heap-data-structure/
   
 ## **7.Thuật toán Counting Sort (Sắp xếp đếm)**
 
