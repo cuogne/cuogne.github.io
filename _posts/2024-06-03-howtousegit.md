@@ -155,15 +155,7 @@ Lệnh này sẽ tạo một thư mục mới có tên .git, thư mục này ch�
 
 ![Folder .git](/img/howtousegit/folder.git.png)
 
-Bạn có thể xóa thư mục .git này nếu không muốn tiếp tục sử dụng nữa bằng câu lệnh
-
-```console
-rm -rf .git
-```
-
-Hoặc xóa thủ công bằng cách vào folder và xóa chúng.
-
-> Lưu ý rằng lệnh này sẽ xóa vĩnh viễn tất cả lịch sử commit và thông tin về kho lưu trữ Git khỏi thư mục của bạn.
+> Không nên động vào thư mục .git
 {: .prompt-danger }
 
 Sau khi khởi tạo kho lưu trữ trong folder bạn chọn, nếu bạn sử dụng VSCode như mình thì khi nhìn qua folder bạn sẽ thấy các file trong folder có màu xanh lá và chữ U như sau
