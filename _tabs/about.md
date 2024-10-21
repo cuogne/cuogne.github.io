@@ -31,14 +31,14 @@ Notes:
 
 Click vào bên dưới để tele tới nếu bạn muốn liên lạc với mình nhé !!!
 
-[<img src="/img/intro/Facebook.png" alt="fb" width="50"/>](https://www.facebook.com/cuoq.nc/)
-[<img src="/img/intro/instagram.png" alt="ins" width="50"/>](https://www.instagram.com/_cuogne/)
-[<img src="/img/intro/locket.png" alt="locket" width="50"/>](https://locket.camera/links/WZTL5Pb85EWVSeHJ8)
-[<img src="/img/intro/github.png" alt="github" width="50"/>](https://github.com/cuogne)
-[<img src="/img/intro/discord.png" alt="discord" width="50"/>](https://discord.gg/haycRy5eqW)
-[<img src="/img/intro/reddit.png" alt="reddit" width="50"/>](https://www.reddit.com/user/cuogne/)
-[<img src="/img/intro/linkedin.png" alt="linkedin" width="50"/>](https://www.linkedin.com/in/cuogne/)
-[<img src="/img/intro/spotify.png" alt="spotify" width="50"/>](https://open.spotify.com/playlist/00NUGyjyWXOXmFaSaDvNRX?si=1f16c625fd014ef6)
+[<img src="/img/intro/facebook.png" alt="fb" width="70"/>](https://www.facebook.com/cuoq.nc/)
+[<img src="/img/intro/instagram.png" alt="ins" width="70"/>](https://www.instagram.com/_cuogne/)
+[<img src="/img/intro/locket.png" alt="locket" width="70"/>](https://locket.camera/links/WZTL5Pb85EWVSeHJ8)
+[<img src="/img/intro/github.png" alt="github" width="70"/>](https://github.com/cuogne)
+[<img src="/img/intro/discord.png" alt="discord" width="70"/>](https://discord.gg/haycRy5eqW)
+[<img src="/img/intro/reddit.png" alt="reddit" width="70"/>](https://www.reddit.com/user/cuogne/)
+[<img src="/img/intro/linkedin.png" alt="linkedin" width="70"/>](https://www.linkedin.com/in/cuogne/)
+[<img src="/img/intro/spotify.png" alt="spotify" width="70"/>](https://open.spotify.com/playlist/00NUGyjyWXOXmFaSaDvNRX?si=1f16c625fd014ef6)
 
 - UID Genshin Impact : [812437754](https://enka.network/u/812437754/)
 ![Genshin Impact](/img/intro/genshin_impact.jpeg)
@@ -48,7 +48,7 @@ Click vào bên dưới để tele tới nếu bạn muốn liên lạc với m�
 
 - ID TFT: cuogne#1106
 
-- > Chỉ chơi tft thui, nhma dạo này lười wa kh chơi luôn
+- > Acc riot thì chỉ chơi tft thui, nhma dạo này lười wa kh chơi luôn
 
 ghi xàm vậy đủ rồi, chạy deadline tiếp thoiiii
 
