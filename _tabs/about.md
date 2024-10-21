@@ -31,7 +31,7 @@ Notes:
 
 Click vào bên dưới để tele tới nếu bạn muốn liên lạc với mình nhé !!!
 
-[<img src="/img/intro/facebook.png" alt="fb" width="70"/>](https://www.facebook.com/cuoq.nc/)
+[<img src="/img/intro/fb.png" alt="fb" width="70"/>](https://www.facebook.com/cuoq.nc/)
 [<img src="/img/intro/instagram.png" alt="ins" width="70"/>](https://www.instagram.com/_cuogne/)
 [<img src="/img/intro/locket.png" alt="locket" width="70"/>](https://locket.camera/links/WZTL5Pb85EWVSeHJ8)
 [<img src="/img/intro/github.png" alt="github" width="70"/>](https://github.com/cuogne)
